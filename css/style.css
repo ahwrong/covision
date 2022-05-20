@@ -1,0 +1,345 @@
+@charset "UTF-8";
+:root {  /*최상위*/
+  --content-width: 1320px;
+}
+/* 공통 UI */
+a.common-btn {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
+  color: white;
+  line-height: 60px;
+  border-radius: 5px;
+  text-align: center;
+  background: #985AF9;
+}
+
+/* mainbanner */
+#mainbanner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80%;
+  box-sizing: border-box;
+  background-image: url('../img/back1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mainbanner .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#mainbanner .maintext {
+  text-align: left;
+  margin-left: 50px;
+  
+}
+
+#mainbanner .maintext p {
+  color: #fff;
+  padding-bottom: 300px;
+  padding-left: 50px;
+  font-weight: 300;
+  font-size: 46px;
+}
+
+#mainbanner .maintext p.maintitle {
+  display: inline-block;
+  padding-bottom: 50px;
+}
+
+#mainbanner .maintext p.subtitle {
+  padding-bottom: 90px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#mainbanner .maintext a.common-btn {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+#mainbanner img {
+  position: absolute;
+  right: 30px;
+  bottom: -150px;
+}
+
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 상단 고정형 메뉴 */
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: rgba( 244, 244, 244, 0.8 );
+}
+
+#logo {
+  float : left;
+}
+
+#header .inner {
+  float: right;
+}
+
+#header .h-inner {
+  width: var(--content-width);
+  margin: 0 auto;
+  padding: 45px 25px 45px;
+}
+
+#header .inner #gnb {
+  margin-right : 103px;
+}
+
+#header .inner #gnb li {
+  margin-left: 47px;
+}
+
+#header .inner > ul {
+  overflow: hidden;
+  float: left;
+}
+
+#header .inner > ul > li {
+  float: left;
+  height: 20px;
+}
+
+#header .inner > ul > li > a {
+  line-height: 20px;
+}
+
+/* 컨텐츠 영역 */
+#container section .inner {
+  width: 100%;
+  min-height: 100%;
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+#container section .inner h2 {
+  font-size: 45px;
+  line-height: 60px;
+  color: #333333;
+}
+
+#container section .inner .subtitle {
+  margin-top: 21px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #666666;
+}
+
+#container section .inner .wrap {
+  overflow: hidden;
+}
+
+#container section .inner .wrap li {
+  float: left;
+  width: 25%;
+  padding: 0 20px;
+}
+
+#container section .inner .wrap li .items {
+  min-height: 270px;
+  padding: 45px 0;
+}
+
+#container section .inner .box-wrap li .items h3 {
+  font-size: 20px;
+  line-height: 1;
+  color: #252525;
+}
+
+#container section .inner .box-wrap li .items p {
+  margin-top: 30px;
+  padding: 0 50px;
+  line-height: 24px;
+}
+
+#container section .inner .box-wrap li .items img {
+  margin-top: 32px;
+  opacity: .8;
+}
+
+#container section .inner .thumb-img-wrap {
+  text-align: center;
+}
+
+#container section .inner .thumb-img-wrap ul {
+  display: inline-block;
+}
+
+#container section .inner .thumb-img-wrap ul:nth-child(1) {
+  margin-top: 75px;
+}
+
+#container section .inner .thumb-img-wrap ul:nth-child(2) {
+  /* margin-top: 80px; */
+}
+
+#container section .inner .thumb-img-wrap ul li {
+  display: inline-block;
+  float: left;
+  width: 16.666%;
+}
+
+#container section .inner .thumb-img-wrap ul li a img {
+  width: 100%;
+}
+
+#container section .inner .box {
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+}
+
+#container section .inner .box.img {
+  background-size: cover;
+}
+
+#container section:nth-child(5) .inner .box .text-box {
+  margin-top: 227px;
+}
+
+#container section .inner .box .text-box {
+  margin-top: 165px;
+  display: inline-block;
+  text-align: left;
+}
+
+#container section .inner .box .text-box h2 span .light-text {
+  font-weight: 400;
+}
+
+#container section .inner .box .text-box a.common-btn {
+  margin-top: 43px;
+}
+
+#container section:nth-child(1) .inner .box.img {
+  background-image: url('../img/back2.png');
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+#container section:nth-child(2) .inner .box.img {
+  background-image: url('../img/back3.png');
+  background-position: center;
+  background-size: cover;
+}
+
+/* #container section:nth-child(3) .inner .box.img {
+  background-image: url('../img/back3.png');
+} */
+
+#container section:nth-child(1) .inner {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#container section:nth-child(2) {
+  background: #f9f9f9;
+}
+
+#container section:nth-child(2) .inner {
+  min-height: 652px;
+  box-sizing: border-box;
+}
+
+/* 네번째 섹션 영역 */
+/* #container section:nth-child(4) {
+  background-color: #f4f4f4;
+  background-image: url('../img/back3.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: calc( 50% + 654px ); center;
+} */
+
+/* 다섯번째 섹션 영역 */
+/* #container section:nth-child(5) {
+  background: #1d314a;
+}
+
+#container section:nth-child(5) .inner .box.img {
+  background-image: url('../img/back2.png');
+}
+
+#container section:nth-child(5) .inner .box .text-box h2 {
+ color: white;
+} */
+
+/* 하단 영역 */
+#footer {
+  background: #eeeeee;
+}
+
+#footer .inner {
+  position: relative;
+  width: var(--content-width);
+  height: 250px;
+  padding: 50px 20px 0;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#footer .inner .f-box {
+  float: left;
+}
+
+#footer .inner .f-box:nth-child(2) {
+  padding-left: 75px;
+}
+
+#footer .inner .f-box ul {
+  overflow: hidden;
+}
+
+#footer .inner .f-box ul li {
+  float: left;
+  height: 20px;
+  margin-left: 40px;
+}
+
+#footer .inner .f-box ul li:first-child {
+  margin-left: 0;
+}
+
+#footer .inner .f-box ul li a {
+  line-height: 20px;
+  color: #333333;
+}
+
+#footer .inner .f-box .tel {
+  margin-top: 17px;
+  font-weight: 900;
+  line-height: 1;
+  color: #333333;
+}
+
+#footer .inner .f-box .tel a {
+  color: #333333;
+}
+
+#footer .inner .f-box .copyright {
+  margin-top: 23px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+}
